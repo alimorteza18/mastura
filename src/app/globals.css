@@ -2,32 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* @media only screen and (max-width: 450px) {
+  body {
+    min-width: 650px;
+    margin: 0;
   }
+} */
+
+* {
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: 'Peyda';
+  overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-m-green {
+  background-color: rgba(59, 152, 105, 1);
+}
+.bl-gradient{
+  background: linear-gradient(270deg, #5BAAAA 0%, #9FD0D0 100%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: 'Peyda';
+  src: local('Peyda'),
+    local('Peyda'),
+    url('../../public/fonts/PeydaWeb-Medium.woff2') format('woff2'),
+    url('../../public/fonts/PeydaWeb-Medium.woff') format('woff'),
+    url('../../public/fonts/Peyda-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: normal;
+  /*font-style: normal;*/
+}
+
+
+.gift-background {
+  background: linear-gradient(180deg, #308B5D 20%, rgba(48, 139, 93, 0) 91%);
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.bg-white-glass{
+  background: #FFFFFF4D;
+}
+
+.gr-gradient{
+  background: linear-gradient(270deg, #46B07F 0%, #7BC363 100%);
+
+}
+
+.br-gradient{
+  background: linear-gradient(270deg, #D2BE8F 0%, #EBDAB4 100%);
+
+}
+
+.db-gradient{
+  background: linear-gradient(270deg, #226AD6 0%, #689EEE 100%);
+
+}
+
+.pr-gradient{
+  background: linear-gradient(270deg, #802EC1 0%, #BA95F8 100%);
+
 }
