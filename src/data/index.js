@@ -69,3 +69,21 @@ export const sideBar = [
         link:""
     },
 ]
+
+export const mobileSideBar = [
+    {
+        title:"مسابقه",
+        imgUrl:"/icons/competition.svg",
+        link:""
+    },
+    {
+        title:"جدول امتیازات",
+        imgUrl:"/icons/Road.svg",
+        link:""
+    },
+    {
+        title:"محتوای کاربران",
+        imgUrl:"/icons/user-reels.svg",
+        link:""
+    },
+]

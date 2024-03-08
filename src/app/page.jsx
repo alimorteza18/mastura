@@ -13,7 +13,6 @@ import Faq from "../components/home/Faq"
 import Activity from "../components/home/Activity"
 
 
-
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
 

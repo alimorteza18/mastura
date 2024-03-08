@@ -15,3 +15,15 @@ export const login = (mobile) => {
     const url = `${URL}/Authentications/ConfirmLogin`;
     return http.post(url, confirmCode);
   };
+
+  //Get Road
+  export const GetRoad = () => {
+    const url = `${URL}/Ayat/GetRoad`;
+    return http.get(url);
+  };
+
+  //Get Single Road
+  export const getSingleRoad = (id) => {
+    const url = `${URL}/Ayat/GetOneAye?AyeId=${id}`;
+    return http.get(url);
+  }

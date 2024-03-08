@@ -16,6 +16,9 @@
   font-family: 'Peyda';
   overflow-x: hidden;
 }
+p{
+  font-weight: 300;
+}
 
 .bg-m-green {
   background-color: rgba(59, 152, 105, 1);
@@ -31,11 +34,22 @@
     url('../../public/fonts/PeydaWeb-Medium.woff2') format('woff2'),
     url('../../public/fonts/PeydaWeb-Medium.woff') format('woff'),
     url('../../public/fonts/Peyda-Medium.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 300;
   font-stretch: normal;
   /*font-style: normal;*/
 }
+@font-face{
+  font-family: 'QuranTaha';
+  src: local('QuranTaha'),
+  local('QuranTaha'),
+  url('../../public/fonts/QuranTaha.ttf') format('truetype');
+  font-weight: 300;
+  font-stretch: normal;
+}
 
+.quran-taha{
+  font-family: 'QuranTaha';
+}
 
 .gift-background {
   background: linear-gradient(180deg, #308B5D 20%, rgba(48, 139, 93, 0) 91%);
@@ -53,7 +67,9 @@
 .bg-white-glass{
   background: #FFFFFF4D;
 }
-
+.bg-gray{
+  background: #FFFFFFD9;
+}
 .gr-gradient{
   background: linear-gradient(270deg, #46B07F 0%, #7BC363 100%);
 
@@ -72,4 +88,10 @@
 .pr-gradient{
   background: linear-gradient(270deg, #802EC1 0%, #BA95F8 100%);
 
+}
+
+#bg-gradient{
+  background-image: url('../../public/images/Gradient-bg.svg'),url('../../public/images/Planet.svg');
+  background-attachment: fixed;
+  background-position: center;
 }
